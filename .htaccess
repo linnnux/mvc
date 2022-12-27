@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+#### PERSISTENT CONTENT ####
+RewriteCond %{REQUEST_URI} \/(?:store\.log|ga_code)$ [OR]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ IT-AK/PHP/public/index.php [L,QSA]
