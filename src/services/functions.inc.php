@@ -1,6 +1,10 @@
 <?php
 
-
+/**
+ * ===================================================================================
+ * return the ask page.
+ * ===================================================================================
+ */
 function getRoute($uri)
 {
 	$uri = explode('/', $uri);
@@ -12,11 +16,10 @@ function getFilePageByAlias($pages, $page)
 	$response = 404;
 	foreach ($pages as ["id" => $id, "alias" => $alias, "file" => $file])
 	{
-
-			if($page == $alias)
-			{
-				$response = $file;
-			}
+		if($page == $alias)
+		{
+			$response = $file;
+		}
 	}
 	return $response;
 }
@@ -25,7 +28,7 @@ function listAllRoutes($pages)
 {
 	foreach ($pages as ["id" => $id, "alias" => $alias, "file" => $file])
 	{
-			echo "id: $id, alias: $alias, file : $file  <br>" ;
+		echo "id: $id, alias: $alias, file : $file  <br>";
 	}
 }
 
