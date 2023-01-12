@@ -22,16 +22,13 @@
                     </ul>
                 </nav>
             </div>
-
         </header>
-
         <section id="main-image">
             <div class="wrapper">
                 <h2>Organisez votre <br> <strong> voyage sur mesure</strong></h2>
                 <a href="#" class="button-1">par ici</a>
             </div>
         </section>
-
         <section id="steps">
             <div class="wrapper">
                 <ul>
